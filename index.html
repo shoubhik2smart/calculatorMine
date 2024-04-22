@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CalC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="full">
+        <div class="calc">
+            <form>
+                <div class="res">
+                    <input type="text" id="getInput" readonly autofocus>
+                </div>
+                <div class="btns">
+                    <input type="button" value="C" onclick="clearAll()" class="color">
+                    <input type="button" value="DEL" onclick="del()">
+                    <input type="button" value="." onclick="get('.')">
+                    <input type="button" value="/" onclick="get('/')" class="color">
+                </div>
+                <div class="btns">
+                    <input type="button" value="7" onclick="get('7')">
+                    <input type="button" value="8" onclick="get('8')">
+                    <input type="button" value="9" onclick="get('9')">
+                    <input type="button" value="X" onclick="get('*')" class="color">
+                </div>
+                <div class="btns">
+                    <input type="button" value="4" onclick="get('4')">
+                    <input type="button" value="5" onclick="get('5')">
+                    <input type="button" value="6" onclick="get('6')">
+                    <input type="button" value="-" onclick="get('-')" class="color">
+                </div>
+                <div class="btns">
+                    <input type="button" value="1" onclick="get('1')">
+                    <input type="button" value="2" onclick="get('2')">
+                    <input type="button" value="3" onclick="get('3')">
+                    <input type="button" value="+" onclick="get('+')" class="color">
+                </div>
+                <div class="btns">
+                    <input type="button" value="0" onclick="get('0')">
+                    <input type="button" value= "=" onclick="equals()" id="equalTo">
+
+
+                </div>
+            </form>
+            <div class="footer"> <i class="ri-copyright-fill"></i>Made by Shoubhik</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    
+}
+.full {
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    background: #3a4452;
+    border-radius: 1rem;
+    padding: 90px 70px;
+    
+}
+
+.calc form .btns .color {
+    background-color: rgb(239, 163, 23);
+}
+.calc form .btns #equalTo {
+    width: 235px;
+}
+
+.calc form .res input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.calc form .btns input {
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    /* box-shadow: -8px -8px -15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
+    background: black;
+    color: #fff;
+
+}
+.calc form .btns input:hover {
+    opacity: 0.7;
+}
+.calc form .res {
+    display: flex;
+    justify-content: flex-end;
+}
+.calc form .res input {
+    text-align: right;
+    flex: 1;
+}
+.footer {
+    position: absolute;
+    right: 1%;
+    bottom: 2%;
+}
+.footer i{
+    color: red;
+    font-size: 1.2rem;
+}
